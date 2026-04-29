@@ -1,0 +1,26 @@
+Synth for Stata: Change Log for public releases
+
+0.0-6
+
+Made changes to code to avoid constraints from inlist and added plugins for additional OSs.
+
+0.0-5
+
+Added plugin for Mac (thanks to Daniel Bjorkegren for compiling the code)
+
+0.0-5 
+
+Improved construction for predictors to allow for more control units in the donor pool. Updated help file to include new examples and fixed typos. 
+
+0.0-4
+
+Improved routine checking for missing data.
+
+0.0-3
+
+Improved specialized syntax for easy averaging of predictors.
+
+0.0-2
+
+Added allopt optimization option.
+

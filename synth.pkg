@@ -1,0 +1,28 @@
+v 3
+d synth. Synthetic Control Methods for Comparative Case Studies
+d {bf: Alberto Abadie, Kennedy School of Government, Harvard University and NBER}
+d {bf: Alexis Diamond, IFC}
+d {bf: Jens Hainmueller, Department of Political Science and Graduate School of Business, Stanford}
+d 
+d Implements the synthetic control method for causal inference in comparative case studies as
+d described in "Synthetic Control Methods for Comparative Case Studies of Aggregate Interventions: 
+d Estimating the Effect of California's Tobacco Control Program. 
+d Journal of the American Statistical Association. 105(490): 493-505. 2010.
+d
+d
+d Support: jhain@stanford.edu
+f synth.ado
+f synth_ll.ado
+f lsynth_mata_subr.mlib
+f synth.sthlp
+f smoking.dta
+g WIN        synthopt.win32   synthopt.plugin
+g WIN64A     synthopt.win64   synthopt.plugin
+g LINUX      synthopt.linux32 synthopt.plugin
+g MACINTEL   synthopt.mac     synthopt.plugin
+g MACINTEL64 synthopt.mac     synthopt.plugin
+g MAC        synthopt.mac     synthopt.plugin
+g OSX.X86    synthopt.mac     synthopt.plugin
+g OSX.X8664  synthopt.mac     synthopt.plugin
+g OSX.PPC    synthopt.mac     synthopt.plugin
+g LINUX64     synthopt.linux64 synthopt.plugin

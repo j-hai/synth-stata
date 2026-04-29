@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+plugin-src/build/
+*.o
+*.obj
+*.ncb
+*.suo
+*.sln.cache
+
+# Stata
+*.smcl
+log.txt
+*.log
+
+# macOS
+.DS_Store
+Icon?
+
+# Editor
+*.swp
+.vscode/
+.idea/

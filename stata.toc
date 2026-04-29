@@ -1,0 +1,8 @@
+v 3
+d Synthetic Control Methods for Comparative Case Studies
+d Alberto Abadie, Kennedy School of Government, Harvard University and NBER
+d Jens Hainmueller, Department of Political Science, MIT
+d Alexis Diamond, IFC
+d
+d Also see the homepage for the paper that describes the method.
+p synth Synthetic Control Methods
