@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include <string.h>
-#include <malloc.h>
+#include <stdlib.h>     /* for malloc/calloc/free; <malloc.h> isn't portable
+                         (no such header on macOS, where malloc is in stdlib.h) */
 #include "pr_loqo.h"
 
 #include "stplugin.h"
+
+/* sprintf_s is a Microsoft-specific Annex K extension. The stdlib
+   replacement is snprintf; same buffer-bounded semantics. */
+#if !defined(_MSC_VER)
+  #define sprintf_s(buf, sz, fmt, ...) snprintf((buf), (sz), (fmt), __VA_ARGS__)
+#endif
 
 #define ERROR_READ_STATA			201
 #define ERROR_H_NOT_SYMMETRIC		202

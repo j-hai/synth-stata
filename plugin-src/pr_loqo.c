@@ -22,7 +22,15 @@
 #include <stdio.h>
 #include "pr_loqo.h"
 
-//#define	max(A, B)	((A) > (B) ? (A) : (B))
+/* min/max macros — deliberately defined here. They are not part of standard
+   C, and previously this file relied on them being injected by the build
+   environment, which broke macOS compiles (see commit history). */
+#ifndef max
+#define max(A, B)  ((A) > (B) ? (A) : (B))
+#endif
+#ifndef min
+#define min(A, B)  ((A) < (B) ? (A) : (B))
+#endif
 //#define	min(A, B)	((A) < (B) ? (A) : (B))
 #define sqr(A)          ((A) * (A))
 #define	ABS(A)  	((A) > 0 ? (A) : (-(A)))
