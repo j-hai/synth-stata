@@ -1,0 +1,49 @@
+Synth Stata integration tests — current source
+
+==== t1 smoking default ====
+RMSPE:
+        1.94323316
+max V diag (proxy for V):
+        0.53648181
+sum W weights:
+        1.00000000
+
+==== t2 smoking customV ====
+RMSPE:
+        6.52970915
+max V diag (proxy for V):
+        0.14285714
+sum W weights:
+        1.00000000
+
+==== t3 smoking nested xperiod ====
+RMSPE:
+        1.75412055
+max V diag (proxy for V):
+        0.93723523
+sum W weights:
+        1.00100000
+
+==== t4 smoking keep ====
+RMSPE:
+        1.94323316
+max V diag (proxy for V):
+        0.53648181
+sum W weights:
+        1.00000000
+
+t4 saved-file vars: 
+  _Co_Number
+  _W_Weight
+  _Y_treated
+  _Y_synthetic
+  _time
+
+==== t5 germany default ====
+RMSPE:
+      135.30533066
+max V diag (proxy for V):
+        0.72336174
+sum W weights:
+        1.00100000
+
