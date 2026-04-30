@@ -334,8 +334,10 @@ A one by one matrix that contains the Root Mean Squared Prediction Error (RMSPE)
 
 {p 4 8 2}
 Load Example Data: This panel dataset contains information for 39 US States for the years 1970-2000
-(see Abadie, Diamond, and Hainmueller (2010) for details).{p_end}
-{p 4 8 2}{stata "sysuse smoking":. sysuse smoking}{p_end}
+(see Abadie, Diamond, and Hainmueller (2010) for details).
+The dataset ships with the package; if {cmd:smoking.dta} is not in your current working directory,
+run {cmd:net get synth} to download it, then:{p_end}
+{p 4 8 2}{stata "use smoking, clear":. use smoking, clear}{p_end}
 
 {p 4 8 2}
 Declare the dataset as panel:{p_end}
