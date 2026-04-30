@@ -1,7 +1,7 @@
 v 3
 d synth. Synthetic Control Methods for Comparative Case Studies
-d {bf: Alberto Abadie, Kennedy School of Government, Harvard University and NBER}
-d {bf: Alexis Diamond, IFC}
+d {bf: Alberto Abadie, MIT}
+d {bf: Alexis Diamond, Minerva University}
 d {bf: Jens Hainmueller, Department of Political Science and Graduate School of Business, Stanford}
 d 
 d Implements the synthetic control method for causal inference in comparative case studies as

@@ -401,7 +401,7 @@ can improve the fit even further and requires yet more computing time. Also, {cm
 predictors are averaged for the 1980,1981,...,1988 period. {p_end}
 
 {p 4 8 2}
-Example 5 – Run placebo in space:{p_end}
+Example 5 ï¿½ Run placebo in space:{p_end}
 {phang}{cmd:. tempname resmat} {break}
 {cmd: forvalues i = 1/4   {c -(}}{break}
 {cmd:      synth cigsale retprice cigsale(1988) cigsale(1980) cigsale(1975) , trunit(`i') trperiod(1989) xperiod(1980(1)1988) } {break}
@@ -420,7 +420,7 @@ This is a code example to run placebo studies by iteratively reassigning the int
 {title:References}
 
 {p 4 8 2}
-Abadie, A., Diamond, A., and J. Hainmueller. 2014. Comparative Politics and the Synthetic Control Method. American Journal of Political Science (Forthcoming 2014).
+Abadie, A., Diamond, A., and J. Hainmueller. 2014. Comparative Politics and the Synthetic Control Method. {it:American Journal of Political Science} 59(2): 495-510.
 
 {p 4 8 2}
 Abadie, A., Diamond, A., and J. Hainmueller. 2010. Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California's Tobacco Control Program.
@@ -439,8 +439,8 @@ Vanderbei, R.J. 1999. LOQO: An interior point code for quadratic programming.
       Jens Hainmueller, jhain@stanford.edu
       Stanford
 
-      Alberto Abadie, alberto_abadie@harvard.edu
-      Harvard University
+      Alberto Abadie
+      MIT
 
-      Alexis Diamond, adiamond@fas.harvard.edu
-      IFC
+      Alexis Diamond
+      Minerva University
