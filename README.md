@@ -23,7 +23,7 @@ ssc install synth, all replace
 Or net-install the development version directly from this repo:
 
 ```
-net install synth, from(https://raw.githubusercontent.com/j-hai/synth-stata/main/) replace
+net install synth, from(https://raw.githubusercontent.com/j-hai/synth-stata/main/s/) replace
 ```
 
 ## Quick start
@@ -61,21 +61,29 @@ See [`NEWS.md`](NEWS.md) for the full change log.
 
 ## Repository layout
 
+The repo mirrors SSC's letter-directory layout so a single
+`net install` delivers everything in one go.
+
 ```
-synth.ado            # the user-facing command
-synth_ll.ado         # loss-function helper (used in nested mode)
-synth.sthlp          # in-Stata help text
-synth.pkg            # SSC package descriptor
-stata.toc            # SSC TOC
-lsynth_mata_subr.mlib  # compiled Mata routines
-synthopt.mac         # macOS plugin (universal: arm64 + x86_64)
-synthopt.linux32     # Linux 32-bit plugin
-synthopt.linux64     # Linux 64-bit plugin
-synthopt.win32       # Windows 32-bit plugin
-synthopt.win64       # Windows 64-bit plugin
-synthopt.plugin      # platform-active plugin (set by SSC installer)
-smoking.dta          # canonical example dataset
-germany.dta          # additional example dataset
+s/                   # primary install dir (matches SSC's bocode/s/)
+  synth.pkg          # SSC package descriptor
+  synth.ado          # the user-facing command
+  synth_ll.ado       # loss-function helper (used in nested mode)
+  synth.sthlp        # in-Stata help text
+  stata.toc          # SSC TOC
+  smoking.dta        # canonical example dataset
+  synthopt.mac       # macOS plugin (universal: arm64 + x86_64)
+  synthopt.linux32   # Linux 32-bit plugin
+  synthopt.linux64   # Linux 64-bit plugin
+  synthopt.win32     # Windows 32-bit plugin
+  synthopt.win64     # Windows 64-bit plugin
+  synthopt.plugin    # platform-active plugin (set by installer)
+
+g/
+  germany.dta        # additional example dataset
+
+l/
+  lsynth_mata_subr.mlib  # compiled Mata routines
 
 plugin-src/          # C source for the optimizer plugin
   synthopt.c, pr_loqo.{c,h}, stplugin.{c,h}

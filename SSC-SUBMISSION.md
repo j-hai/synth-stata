@@ -97,7 +97,7 @@ SSC copy is updated:
 The repo is already net-installable directly:
 
 ```stata
-net install synth, from(https://raw.githubusercontent.com/j-hai/synth-stata/main/) replace
+net install synth, from(https://raw.githubusercontent.com/j-hai/synth-stata/main/s/) replace
 ```
 
 So users blocked by the Apple Silicon issue today can switch to the

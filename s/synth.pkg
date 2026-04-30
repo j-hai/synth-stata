@@ -14,9 +14,9 @@ d Support: jhain@stanford.edu
 f synth.ado
 f synth_ll.ado
 f synth.sthlp
-f lsynth_mata_subr.mlib
+f ../l/lsynth_mata_subr.mlib
 f smoking.dta
-f germany.dta
+f ../g/germany.dta
 G WIN32      synthopt.win32   synthopt.plugin
 G WIN64      synthopt.win64   synthopt.plugin
 G LINUX32    synthopt.linux32 synthopt.plugin
