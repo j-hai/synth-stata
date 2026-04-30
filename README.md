@@ -37,8 +37,12 @@ net get synth, from(https://raw.githubusercontent.com/j-hai/synth-stata/main/s/)
 
 ## Quick start
 
+`smoking.dta` and `germany.dta` are not bundled with Stata; pull them
+into your current working directory first via `net get` (see
+Installation above) or download them directly from this repo.
+
 ```stata
-sysuse smoking
+use smoking, clear
 tsset state year
 
 synth cigsale beer(1984(1)1988) lnincome retprice age15to24 ///

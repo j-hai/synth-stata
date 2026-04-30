@@ -17,9 +17,7 @@ f synth.sthlp
 f ../l/lsynth_mata_subr.mlib
 f smoking.dta
 f ../g/germany.dta
-G WIN32      synthopt.win32   synthopt.plugin
 G WIN64      synthopt.win64   synthopt.plugin
-G LINUX32    synthopt.linux32 synthopt.plugin
 G LINUX64    synthopt.linux64 synthopt.plugin
 G MACARM64   synthopt.mac     synthopt.plugin
 G MACINTEL64 synthopt.mac     synthopt.plugin
