@@ -22,8 +22,17 @@ ssc install synth, all replace
 
 Or net-install the development version directly from this repo:
 
-```
+```stata
 net install synth, from(https://raw.githubusercontent.com/j-hai/synth-stata/main/s/) replace
+```
+
+When net-installing directly from GitHub, Stata installs the command,
+help, plugin, and Mata files, but not the bundled example datasets.
+To download `smoking.dta` and `germany.dta` into your current working
+directory, run:
+
+```stata
+net get synth, from(https://raw.githubusercontent.com/j-hai/synth-stata/main/s/)
 ```
 
 ## Quick start
@@ -61,8 +70,9 @@ See [`NEWS.md`](NEWS.md) for the full change log.
 
 ## Repository layout
 
-The repo mirrors SSC's letter-directory layout so a single
-`net install` delivers everything in one go.
+The repo mirrors SSC's letter-directory layout: `net install` delivers
+the runnable package files, while `net get` downloads the bundled
+example datasets.
 
 ```
 s/                   # primary install dir (matches SSC's bocode/s/)

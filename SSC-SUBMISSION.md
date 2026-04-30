@@ -100,5 +100,11 @@ The repo is already net-installable directly:
 net install synth, from(https://raw.githubusercontent.com/j-hai/synth-stata/main/s/) replace
 ```
 
+To download the example datasets into the current working directory:
+
+```stata
+net get synth, from(https://raw.githubusercontent.com/j-hai/synth-stata/main/s/)
+```
+
 So users blocked by the Apple Silicon issue today can switch to the
 GitHub source while the SSC update is in flight.
