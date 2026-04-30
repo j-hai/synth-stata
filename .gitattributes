@@ -1,0 +1,19 @@
+# Stata distribution files must use LF line endings.
+# Stata's net-install parser on macOS/Linux trips on stray '\r' characters
+# in .pkg / .toc / .ado / .sthlp files and will silently skip the rest of
+# the package after a CRLF-terminated 'f' line.
+*.pkg   text eol=lf
+*.toc   text eol=lf
+*.ado   text eol=lf
+*.sthlp text eol=lf
+*.do    text eol=lf
+
+# Mlib and dta are binary — never normalize.
+*.mlib  binary
+*.dta   binary
+*.plugin     binary
+synthopt.mac      binary
+synthopt.linux32  binary
+synthopt.linux64  binary
+synthopt.win32    binary
+synthopt.win64    binary
